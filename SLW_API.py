@@ -35,7 +35,7 @@ def readMessages(addr, id, password):
     text_arr = (response.text).split('\n')
     ft = []
     for t in text_arr:
-        ft.append(t.split(':'))
+        ft.append(t.split('|'))
     return ft
 
 #mail
